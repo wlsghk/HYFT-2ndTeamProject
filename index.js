@@ -108,18 +108,3 @@ function createSwiper() {
     },
   }); //swiper를 호출하기 위해서 함수로 만들어 줌
 }
-
-const colors = ["", "backgroundBlack"];
-
-const sections = [...document.querySelectorAll("section")];
-
-window.addEventListener("scroll", function () {
-  const scrollFromTop = window.pageYOffset;
-
-  for (let i = 0; sections.length > i; i++) {
-    if (scrollFromTop <= sections[i].offsetTop) {
-      document.body.className = colors[i];
-      break;
-    }
-  }
-});

@@ -44,17 +44,17 @@ body {
 #contentItem .item_title {
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 #contentItem .item_subTitle {
-    font-size: 24px;
-    margin-bottom: 48px;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .item_title, .item_subTitle {
     text-align: center;
-    line-height: 77px;
+    line-height: 4.8125rem;
 }
 
 #contentItem .item_emo {
@@ -65,19 +65,15 @@ body {
 #contentItem .item_menu {
     display: flex;
     font-family: 'Cormorant SC', serif;
-    font-size: 70px;
+    font-size: 4.375rem;
     letter-spacing: -0.35vw;
     justify-content: center;
     margin-bottom: 2.5vw;
     cursor: pointer;    
 }
 
-/* .item_menu .menu_new {
-    box-shadow: inset 0 -2vw 0 #E9DDD4;
-} */
-
 .menu_recommend, .menu_new {
-    margin-right: 115px
+    margin-right: 7.1875rem;
 }
 
 /* 메뉴 형광펜 효과 */
@@ -91,12 +87,8 @@ body {
 }
 
 .item_pic_box div {
-    font-size: 20px;
-    line-height: 33px;
-}
-
-p {
-    margin-left: 10px;
+    font-size: 1.25rem;
+    line-height: 2.0625rem;
 }
 
 /* Swiper */
@@ -106,7 +98,7 @@ p {
 }
 
 .swiper-slide {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
     
 .swiper-slide img {
@@ -126,17 +118,17 @@ p {
 /* 움직이는 라인 */
 #contentLine {
     font-weight: 600;
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #E9DDD4;
     position: relative;
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 6.25rem 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 6.25rem;
+    margin-bottom: 12.5rem;
 }
 
 @keyframes marquee {
@@ -184,7 +176,7 @@ p {
 }
 
 .hyft_title, .goals_title, .package_title {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
     text-align: center;
 }
@@ -192,7 +184,7 @@ p {
 .hyft_subtitle,
 .goals_subtitle,
 .package_subtitle {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .hyft_subtitle {
@@ -323,20 +315,6 @@ p {
 .mood_box img {
     width: 31.25rem;
 }
-    
-/* #contentMood .mood_box:hover~.mood_box {
-    transform: rotateY(-25deg);
-}
-    
-#contentMood .mood_box:hover {
-    transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-    
-#contentMood .mood_box:hover .mood_box_img:before {
-    opacity: 1;
-} */
     
 #contentMood .mood_subtitle {
     font-family: 'Montserrat', sans-serif;
