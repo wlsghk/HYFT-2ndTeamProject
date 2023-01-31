@@ -5,6 +5,8 @@
 
 body {
     overflow-x: hidden;
+    transition: 2s all;
+    background: #FBF9F7;
 }
 
 /* 컨테이너 틀 */
@@ -67,6 +69,7 @@ body {
     letter-spacing: -0.35vw;
     justify-content: center;
     margin-bottom: 2.5vw;
+    cursor: pointer;    
 }
 
 /* .item_menu .menu_new {
@@ -111,6 +114,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .swiper-button-prev:after,
@@ -222,6 +226,7 @@ p {
 .mood_left .left_buy {
     font-size: 0.875rem;
     font-family: 'Montserrat';
+    font-weight: 400;
     margin-top: 8.125rem;
     margin-left: 18.75rem;
 }
@@ -295,13 +300,13 @@ p {
     font-size: 2.25rem;
     transform: translateY(200px);
     transition-delay: 0.3s;
-    font-weight: 400;
+    font-weight: 600;
 }
     
 #contentMood .mood_box .mood_text p {
     color: #fff;
     transition: 0.3s;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transform: translateY(180px);
     transition-delay: 0.4s;
     font-weight: 100;
@@ -421,7 +426,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FBF9F7;
 }
 
 #contentFixedImg .fixed_img {
@@ -430,9 +434,10 @@ p {
     align-items: center;
     width: 80%;
     height: 50rem;
-    background: url("./img/lastBackground.gif") no-repeat fixed;
+    background: rgba(0, 0, 0, 0.5) url("./img/lastBackground.gif") no-repeat fixed;
     background-size: cover;
-    filter: brightness(50%)
+    background-blend-mode: darken;
+    background-color: transparent;
 }
 
 .fixed_text {
