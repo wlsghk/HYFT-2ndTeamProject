@@ -1,0 +1,26 @@
+[
+    {
+        "id": 4,
+        "title": "섬유 향수",
+        "price": 18000,
+        "image": "../img/item/happyItem5.png"
+    },    
+    {
+        "id": 5,
+        "title": "풍선곰 조각상",
+        "price": 12000,
+        "image": "../img/item/happyItem6.png"
+    },
+        {
+        "id": 6,
+        "title": "캔들 워머",
+        "price": 28000,
+        "image": "../img/item/happyItem7.png"
+    },
+        {
+        "id": 7,
+        "title": "양귀비 조화",
+        "price": 13000,
+        "image": "../img/item/happyItem8.png"
+    }
+]

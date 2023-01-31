@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Mono", monospace;
+      }
+
+      body {
+        background-color: #fbf9f7;
+        transition: 2s all;
+      }
+
+      section {
+        height: 200vh;
+      }
+
+      .backgroundBlack {
+        background: black;
+      }
+
+      span {
+        color: white;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="commu_text">
+      <span>#HAPPY</span><span>#EXCITED</span><span>#ANGRY</span
+      ><span>#SLEEPY</span>
+      <pre></pre>
+      <span>#SAD</span><span>#PLEASED</span><span>#BORED</span
+      ><span>#RELAXED</span>
+      <pre></pre>
+      <span>#NERVOUS</span><span>#PEACEFUL</span><span>#LONELY</span
+      ><span>#CALM</span>
+    </div>
+  </body>
+  <script>
+    // Found here https://stackoverflow.com/questions/56208277/changing-background-color-on-scroll
+    const colors = ["", "backgroundBlack"];
+
+    const span = [...document.querySelectorAll("span")];
+
+    window.addEventListener("scroll", function () {
+      const scrollFromTop = window.pageYOffset;
+
+      for (let i = 0; sections.length > i; i++) {
+        if (scrollFromTop <= sections[i].offsetTop) {
+          document.body.className = colors[i];
+          break;
+        }
+      }
+    });
+  </script>
+</html>

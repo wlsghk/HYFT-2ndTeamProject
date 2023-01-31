@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /*Now the styles*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+      #contentMood {
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
+
+        /*Time for some styling*/
+        margin: 100px auto;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+      }
+
+      /*A small hack to prevent flickering on some browsers*/
+      #contentMood ul {
+        width: 2000px;
+        /*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+      }
+
+      #contentMood li {
+        position: relative;
+        display: block;
+        width: 160px;
+        float: left;
+
+        border-left: 1px solid #888;
+
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+	see the basic accordian*/
+      }
+
+      /*Reduce with of un-hovered elements*/
+      #contentMood ul:hover li {
+        width: 40px;
+      }
+      /*Lets apply hover effects now*/
+      /*The LI hover style should override the UL hover style*/
+      #contentMood ul li:hover {
+        width: 640px;
+      }
+
+      #contentMood li img {
+        display: block;
+      }
+
+      /*Image title styles*/
+      #contentMood .mood_box .mood_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        padding: 20px;
+        align-items: flex-end;
+        box-sizing: border-box;
+      }
+
+      #contentMood .mood_box .mood_text h2 {
+        color: #fff;
+        transition: 0.3s;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 36px;
+        transform: translateY(200px);
+        transition-delay: 0.3s;
+      }
+
+      #contentMood .mood_box .mood_text p {
+        color: #fff;
+        transition: 0.3s;
+        font-size: 24px;
+        transform: translateY(200px);
+        transition-delay: 0.4s;
+      }
+
+      #contentMood .mood_box:hover .mood_text h2 {
+        transform: translateY(-180px);
+      }
+
+      #contentMood .mood_box:hover .mood_text p {
+        transform: translateY(-180px);
+      }
+      img {
+        width: 500px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- We will make a simple accordian with hover effects 
+The markup will have a list with images and the titles-->
+    <div id="contentMood">
+      <ul>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/angry.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2>ANGRY</h2>
+              <p>more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/nervous2.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2>NERVOUS</h2>
+              <p>more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/bored.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2>BORED</h2>
+              <p>more view</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="indexWeb.css" />
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <style>
+      @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+    </style>
+    <!-- 파비콘 -->
+    <link rel="icon" href="./icon/pavi.ico" />
+    <title>HYFT ˘◡˘</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top"></div>
+      <div id="header"></div>
+
+      <!-- 배너 동영상 -->
+      <div id="mainBanner">
+        <video
+          class="banner_video"
+          x-data="loopPlayer()"
+          muted
+          loop
+          autoplay
+          playsinline
+          disablepictureinpicture
+          disableremoteplayback
+          preload="none"
+          class="loopVideo"
+        >
+          <source src="./video/list4.mp4" />
+        </video>
+      </div>
+
+      <!-- 추천, 신상품, 베스트 아이템 나열 -->
+      <div id="contentItem">
+        <div class="item_title">
+          WE SUPPOR
+          <pre></pre>
+          #HAPPINESS
+        </div>
+        <div class="item_subTitle">행복한 순간 행복한 선택</div>
+        <div class="item_emo">
+          <img src="./icon/happy.png" alt="행복" class="emo_happy" />
+        </div>
+        <div class="item_menu">
+          <div class="menu_recommend">Recommend</div>
+          <div class="menu_new">New Arrivals</div>
+          <div class="menu_best">Best Item</div>
+        </div>
+        <div class="item_pic swiper">
+          <div class="swiper-wrapper"></div>
+          <!-- <div class="item_pic_1"></div>
+          <div class="item_pic_2"></div>
+          <div class="item_pic_3"></div>
+          <div class="item_pic_4"></div>
+          <div class="item_pic_5"></div> -->
+        </div>
+      </div>
+
+      <!-- 움직이는 라인 -->
+      <div id="contentLine">
+        <div class="line_move">
+          <span class="line_text"
+            >MOOD FEEL AFFECT&nbsp;&nbsp;MOOD FEEL AFFECT&nbsp;&nbsp;MOOD FEEL
+            AFFECT&nbsp;&nbsp;MOOD FEEL AFFECT&nbsp;&nbsp;MOOD FEEL
+            AFFECT&nbsp;&nbsp;MOOD FEEL AFFECT&nbsp;&nbsp;MOOD FEEL AFFECT</span
+          >
+        </div>
+      </div>
+
+      <!-- 기업 소개 -->
+      <div id="contentUs">
+        <div class="us_hyft">
+          <div class="hyft_container">
+            <img src="" alt="" class="hyft_img" />
+          </div>
+          <div class="hyft_title">ABOUT HYFT</div>
+          <div class="hyft_subtitle">
+            우리는 당신의 감정에 최적화된 상품을 추천합니다.
+            <pre></pre>
+            데이터에 기반한 선택은 소비에 대한 만족감을
+            <pre></pre>
+            극대화시켜 줄 것입니다.
+          </div>
+        </div>
+        <div class="us_goals">
+          <div class="goals_container">
+            <img src="" alt="" class="goals_img" />
+          </div>
+          <div class="goals_title">OUR GOALS</div>
+          <div class="goals_subtitle">
+            모든 감정은 존중받아야 합니다.
+            <pre></pre>
+            당신의 모든 순간에 우리는 함께합니다.
+          </div>
+        </div>
+        <div class="us_package">
+          <div class="package_container">
+            <img src="" alt="" class="package_img" />
+          </div>
+          <div class="package_title">SAVE THE EARTH</div>
+          <div class="package_subtitle">
+            HYFT만의 특별한 친환경 패키지를 경험해 보세요.
+          </div>
+        </div>
+      </div>
+
+      <!-- 기분별 상품 이동 -->
+      <div id="contentMood"></div>
+
+      <!-- 커뮤니티 이동 -->
+      <div id="contentCommunity">
+        <div class="community_emo">
+          <img src="./icon/happy.png" alt="" />
+          <img src="./icon/boring.png" alt="" />
+          <img src="./icon/sad2.png" alt="" />
+          <img src="./icon/nervous.png" alt="" />
+          <img src="./icon/angry.png" alt="" />
+          <img src="./icon/sad.png" alt="" />
+        </div>
+        <div class="commu_text">
+          <span>#HAPPY</span><span>#EXCITED</span><span>#ANGRY</span
+          ><span>#SLEEPY</span>
+          <pre></pre>
+          <span>#SAD</span><span>#PLEASED</span><span>#BORED</span
+          ><span>#RELAXED</span>
+          <pre></pre>
+          <span>#NERVOUS</span><span>#PEACEFUL</span><span>#LONELY</span
+          ><span>#CALM</span>
+        </div>
+        <div class="commu_move">
+          <img src="" />
+        </div>
+      </div>
+      <!-- 배경 고정 이미지 -->
+      <div id="contentFixedImg">
+        <div class="fixed_img">
+          <img src="" alt="" />
+          <div class="fixed_text"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</html>

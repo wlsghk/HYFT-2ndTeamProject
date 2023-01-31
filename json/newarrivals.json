@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "title": "글라스 오브제",
+        "price": 13000,
+        "image": "../img/item/happyItem1.png"
+    },
+        {
+        "id": 1,
+        "title": "타원형 소파 테이블",
+        "price": 69000,
+        "image": "../img/item/happyItem2.png"
+    },
+        {
+        "id": 2,
+        "title": "곰돌이 소품 정리함",
+        "price": 7000,
+        "image": "../img/item/happyItem3.png"
+    },
+        {
+        "id": 3,
+        "title": "머쉬룸 스탠드",
+        "price": 43000,
+        "image": "../img/item/happyItem4.png"
+    },
+     {
+        "id": 4,
+        "title": "섬유 향수",
+        "price": 18000,
+        "image": "../img/item/happyItem5.png"
+    },    
+    {
+        "id": 5,
+        "title": "풍선곰 조각상",
+        "price": 12000,
+        "image": "../img/item/happyItem6.png"
+    },
+        {
+        "id": 6,
+        "title": "캔들 워머",
+        "price": 28000,
+        "image": "../img/item/happyItem7.png"
+    },
+        {
+        "id": 7,
+        "title": "양귀비 조화",
+        "price": 13000,
+        "image": "../img/item/happyItem8.png"
+    }
+]
