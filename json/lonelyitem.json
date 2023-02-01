@@ -3,30 +3,30 @@
         "id": 0,
         "title": "허그 피규어",
         "price": 25000,
-        "image": "../img/item/lonelyItem1.jpg"
+        "image": "./img/item/lonelyItem1.jpg"
     },
         {
         "id": 1,
         "title": "곰돌이 유리잔",
         "price": 21000,
-        "image": "../img/item/lonelyItem2.jpg"
+        "image": "./img/item/lonelyItem2.jpg"
     },
         {
         "id": 2,
         "title": "동그라미 머그",
         "price": 21000,
-        "image": "../img/item/lonelyItem3.jpg"
+        "image": "./img/item/lonelyItem3.jpg"
     },
         {
         "id": 3,
         "title": "까마귀 피규어",
         "price": 28000,
-        "image": "../img/item/lonelyItem4.jpg"
+        "image": "./img/item/lonelyItem4.jpg"
     },
         {
         "id": 4,
         "title": "허그 피규어2",
         "price": 25000,
-        "image": "../img/item/lonelyItem5.jpg"
+        "image": "./img/item/lonelyItem5.jpg"
     }
 ]

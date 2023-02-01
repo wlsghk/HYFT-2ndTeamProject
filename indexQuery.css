@@ -118,6 +118,13 @@
         padding: 1.875rem;
     }
 
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 64.4000vw !important;
+        height: 80.6000vw !important;
+    }
+
     .hyft_title,
     .goals_title,
     .package_title {
