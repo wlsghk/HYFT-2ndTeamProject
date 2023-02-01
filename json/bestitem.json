@@ -3,19 +3,19 @@
         "id": 0,
         "title": "캔버스 포스터",
         "price": 9000,
-        "image": "../img/item/bestItem1.png"
+        "image": "./img/item/bestItem1.png"
     },
         {
         "id": 1,
         "title": "조화",
         "price": 12000,
-        "image": "../img/item/bestItem2.png"
+        "image": "./img/item/bestItem2.png"
     },
         {
         "id": 2,
         "title": "빈티지 석고상",
         "price": 13000,
-        "image": "../img/item/bestItem3.png"
+        "image": "./img/item/bestItem3.png"
     },
         {
         "id": 3,
@@ -33,18 +33,18 @@
         "id": 5,
         "title": "쉬폰 라벤더 커튼",
         "price": 23000,
-        "image": "../img/item/bestItem6.png"
+        "image": "./img/item/bestItem6.png"
     },
         {
         "id": 6,
         "title": "코랄 가든",
         "price": 23000,
-        "image": "../img/item/bestItem7.png"
+        "image": "./img/item/bestItem7.png"
     },
         {
         "id": 7,
         "title": "망고튤립 조화",
         "price": 9000,
-        "image": "../img/item/bestItem8.png"
+        "image": "./img/item/bestItem8.png"
     }
 ]
