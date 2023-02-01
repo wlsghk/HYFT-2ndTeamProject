@@ -131,3 +131,29 @@ function createSwiper() {
     },
   }); //swiper를 호출하기 위해서 함수로 만들어 줌
 }
+
+/* 미디어쿼리 시 contentMood에 buy now 텍스트 삭제 */
+const $buyText = document.querySelector(".left_buy");
+function mobResize() {
+  window.addEventListener("scroll", (e) => {
+    if (innerWidth <= 1220) {
+      $buyText.style.display = "none";
+      console.log("mobile");
+    } else {
+      $buyText.style.display = "block";
+    }
+  });
+}
+mobResize();
+
+/* 모바일 사이즈 미디어 쿼리 */
+// function mobResize() {
+//   if (matchMedia("screen and (max-width: 1220px)").matches) {
+//     const $buyText = document.querySelector(".left_buy");
+//     $buyText.innerHTML = "";
+//   }
+//   window.onresize = function () {
+//     document.location.reload();
+//   };
+// }
+// mobResize();

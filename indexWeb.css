@@ -219,10 +219,9 @@ body {
 
 /* 기분별 페이지 이동 */
 #contentMood {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    grid-template-columns: repeat(2, auto);
 }
 
 #contentMood .mood_left span {
@@ -241,11 +240,11 @@ body {
 .left_buy img {
     width: 3.125rem;
 }
+
 .mood_right_container {
     width: 31.25rem;
     height: 37.5rem;
     overflow: hidden;
-    margin: 6.25rem auto;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);

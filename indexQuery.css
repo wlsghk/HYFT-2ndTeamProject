@@ -11,7 +11,8 @@
         
     .hyft_title,
     .goals_title,
-    .package_title {
+    .package_title,
+    .left_title {
         font-size: 4.8387vw;
     }
         
@@ -27,9 +28,22 @@
 }
 
 @media screen and (max-width: 1220px) {
-        .hyft_subtitle {
+    .hyft_subtitle {
         padding-left: 85px !important;
     }
+
+    #contentMood {
+    flex-direction: column;
+    }
+
+    .left_title {
+        margin-bottom: 7.5rem;
+    }
+
+    .left_title span {
+        margin-left: 30px !important;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -49,7 +63,8 @@
         
     .hyft_title,
     .goals_title,
-    .package_title {
+    .package_title,
+    .left_title {
         font-size: 3.01875rem;
     }
 
@@ -64,6 +79,10 @@
     .package_subtitle {
         font-size: 1.20625rem;
         text-align: center;
+    }
+
+    #contentEmpty {
+        height: 27.2vw;
     }
 }
 
@@ -89,7 +108,8 @@
 @media screen and (max-width: 630px) {
     .hyft_title,
     .goals_title,
-    .package_title {
+    .package_title,
+    .left_title {
         font-size: 7.6667vw;
     }
 
@@ -129,7 +149,8 @@
 
     .hyft_title,
     .goals_title,
-    .package_title {
+    .package_title,
+    .left_title {
         font-size: 2.39375rem;
     }
 
