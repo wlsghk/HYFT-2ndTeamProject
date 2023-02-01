@@ -65,7 +65,7 @@ body {
 #contentItem .item_menu {
     display: flex;
     font-family: 'Cormorant SC', serif;
-    font-size: 4.375rem;
+    font-size: 5.6452vw;
     letter-spacing: -0.35vw;
     justify-content: center;
     margin-bottom: 2.5vw;
@@ -73,7 +73,7 @@ body {
 }
 
 .menu_recommend, .menu_new {
-    margin-right: 7.1875rem;
+    margin-right: 5.9896vw;
 }
 
 /* 메뉴 형광펜 효과 */
@@ -89,6 +89,20 @@ body {
 .item_pic_box div {
     font-size: 1.25rem;
     line-height: 2.0625rem;
+}
+
+.item_pic_box .itemPic {
+    position: relative;
+}
+
+.itemPic .pic_explain {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
 /* Swiper */
@@ -415,7 +429,6 @@ body {
     background: rgba(0, 0, 0, 0.5) url("./img/lastBackground.gif") no-repeat fixed;
     background-size: cover;
     background-blend-mode: darken;
-    background-color: transparent;
 }
 
 .fixed_text {

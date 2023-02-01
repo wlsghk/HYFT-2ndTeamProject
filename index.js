@@ -59,15 +59,41 @@ function makeList(data) {
     const $div = document.createElement("div");
     $div.className = "item_pic_box swiper-slide";
     $div.innerHTML = `
-    <div class="item_pic_${item.id}">
+    <div id="item_pic_${item.id}" class="itemPic">
       <img src="${item.image}">
-      <p class="item_title_${item.id}">${item.title}</p>
-      <p class="item_price_${item.id}">${item.price.toLocaleString(
+      <div class="pic_explain">
+        <p class="item_title_${item.id}">${item.title}</p>
+        <p class="item_price_${item.id}">${item.price.toLocaleString(
       "ko-KR"
     )}원</p>
+      </div>
     </div>`;
     $swiperWrapper.appendChild($div);
+
+    const $imgHover = document.querySelectorAll(".itemPic");
+    const $imgExplain = document.querySelectorAll(".pic_explain");
+
+    $imgHover.forEach((item, idx) => {
+      item.addEventListener("mouseover", (e) => {
+        $imgExplain.forEach((list, idx2) => {
+          if (idx === idx2) {
+            list.style.display = "block";
+          }
+        });
+      });
+      item.addEventListener("mouseout", (e) => {
+        $imgExplain.forEach((list, idx2) => {
+          if (idx === idx2) {
+            list.style.display = "none";
+          }
+        });
+      });
+    });
+
+    
   });
+
+
   createSwiper();
 }
 
