@@ -89,10 +89,7 @@ function makeList(data) {
         });
       });
     });
-
-    
   });
-
 
   createSwiper();
 }

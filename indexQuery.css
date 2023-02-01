@@ -2,6 +2,69 @@
     .item_menu {
         font-size: 5.6452vw !important;
     }
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 32.2581vw !important;
+        height: 40.3226vw !important;
+    }
+        
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 4.8387vw;
+    }
+        
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 1.9355vw;
+    }
+    
+    .goals_subtitle {
+        padding-left: 2.2581vw;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+        .hyft_subtitle {
+        padding-left: 85px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contentUs {
+        flex-direction: column;
+    }
+
+    .item_menu {
+        font-size: 3.01875rem;
+    }
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 20.125rem !important;
+        height: 25.1875rem !important;
+    }
+        
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 3.01875rem;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle {
+        margin-bottom: 6.25rem;
+        padding-left: 0 !important;
+    }
+        
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 1.20625rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 835px) {
@@ -21,6 +84,20 @@
     }
 }
 
+@media screen and (max-width: 630px) {
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 7.6667vw;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 3.0635vw;
+    }
+}
+
 @media screen and (max-width: 520px) {
     #contentItem .item_title {
         font-size: 2.3125rem;
@@ -33,6 +110,24 @@
 
     .emo_happy {
         width: 15.3846vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contentUs {
+        padding: 30px;
+    }
+
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 2.39375rem;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 0.95625rem;
     }
 }
 
