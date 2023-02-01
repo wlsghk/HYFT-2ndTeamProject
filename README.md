@@ -1,2 +1,2 @@
 # lastProject
-https://wlsghk.github.io/lastProject/
+https://wlsghk.github.io/lastProject/index.html
