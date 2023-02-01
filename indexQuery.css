@@ -80,7 +80,9 @@
     }
 
     #contentLine {
-        font-size: 13.3333vw; 
+        font-size: 13.3333vw;
+        margin-top: 13.3333vw;
+        margin-bottom: 26.6667vw !important;
     }
 }
 
