@@ -132,7 +132,9 @@ function createSwiper() {
   }); //swiper를 호출하기 위해서 함수로 만들어 줌
 }
 
-/* 미디어쿼리 시 contentMood에 buy now 텍스트 삭제 */
+/* 미디어쿼리 */
+
+/* contentMood에 buy now 텍스트 삭제 */
 const $buyText = document.querySelector(".left_buy");
 function mobResize() {
   window.addEventListener("scroll", (e) => {
@@ -146,14 +148,34 @@ function mobResize() {
 }
 mobResize();
 
-/* 모바일 사이즈 미디어 쿼리 */
-// function mobResize() {
-//   if (matchMedia("screen and (max-width: 1220px)").matches) {
-//     const $buyText = document.querySelector(".left_buy");
-//     $buyText.innerHTML = "";
-//   }
-//   window.onresize = function () {
-//     document.location.reload();
-//   };
-// }
-// mobResize();
+/* 커뮤니티 이동 텍스트 내용 변경 */
+const $CommuText = document.querySelector(".commu_text");
+
+function CommuTextChange() {
+  window.addEventListener("scroll", (e) => {
+    if (innerWidth > 750) {
+      $CommuText.innerHTML = `
+          <span>#HAPPY</span><span>#EXCITED</span><span>#ANGRY</span><span>#SLEEPY</span>
+          <pre></pre>
+          <span>#SAD</span><span>#PLEASED</span><span>#BORED</span><span>#RELAXED</span>
+          <pre></pre>
+          <span>#NERVOUS</span><span>#PEACEFUL</span><span>#LONELY</span><span>#CALM</span>
+      `;
+    } else {
+      $CommuText.innerHTML = `
+          <span>#HAPPY</span><span>#EXCITED</span>
+          <pre></pre>
+          <span>#ANGRY</span><span>#SLEEPY</span>
+          <pre></pre>
+          <span>#SAD</span><span>#PLEASED</span>
+          <pre></pre>
+          <span>#BORED</span><span>#RELAXED</span>
+          <pre></pre>
+          <span>#NERVOUS</span><span>#PEACEFUL</span>
+          <pre></pre>
+          <span>#LONELY</span><span>#CALM</span>
+      `;
+    }
+  });
+}
+CommuTextChange();

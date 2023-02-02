@@ -25,6 +25,11 @@
     .goals_subtitle {
         padding-left: 2.2581vw;
     }
+
+    #contentCommunity .commu_text {
+       font-size: 4.8387vw;
+       line-height: 6.4516vw;
+    }
 }
 
 @media screen and (max-width: 1220px) {
@@ -103,6 +108,14 @@
         margin-top: 13.3333vw;
         margin-bottom: 26.6667vw !important;
     }
+
+    .commu_text {
+        font-size: 2.5rem !important;
+        line-height: 3rem !important;
+    }
+   .happy_emo, .bored_emo, .sad_emo, .nervous_emo, .angry_emo, .lonely_emo {
+        width: 10.6667vw;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -158,6 +171,19 @@
     .goals_subtitle,
     .package_subtitle {
         font-size: 0.95625rem;
+    }
+
+    .commu_text {
+        font-size: 8.0000vw !important;
+        line-height: 9.6000vw !important;
+    }
+
+    .memo_img {
+        width: 56.0000vw;
+    }
+
+    .memo_text {
+        font-size: 9.0000vw;
     }
 }
 
