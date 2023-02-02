@@ -9,6 +9,21 @@ body {
     background: #FBF9F7;
 }
 
+/* 스크롤바 커스텀 */
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 15%;
+    background: #ecccb3e0;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+    }
+
 /* 컨테이너 틀 */
 #container {
     background: #FBF9F7;
@@ -435,4 +450,26 @@ body {
     color: white;
     font-family: 'Cormorant SC', serif;
     font-size: 3.75rem;
+}
+
+/* 탑 버튼 */
+#topBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #c9c7bb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#topBtn:active {
+    background: #F0F0F0;
 }

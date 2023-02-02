@@ -250,7 +250,7 @@ function moodRightChange() {
       `;
     } else {
       moodRightContent.innerHTML = `
-              <ul class="mood_right_content">
+        <ul class="mood_right_content">
           <li class="mood_box">
             <a href="#"><img src="./img/emotion/angryMob.png" alt="" /></a>
             <div class="mood_text">
@@ -288,3 +288,22 @@ function moodRightChange() {
   });
 }
 moodRightChange();
+
+/* 탑 버튼 */
+const $topBtn = document.querySelector("#topBtn");
+$topBtn.style.visibility = "hidden";
+
+window.addEventListener("scroll", (e) => {
+  if (scrollY > 1600) {
+    $topBtn.style.visibility = "visible";
+  } else if (scrollY <= 1600) {
+    $topBtn.style.visibility = "hidden";
+  }
+});
+
+$topBtn.addEventListener("click", (e) => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
