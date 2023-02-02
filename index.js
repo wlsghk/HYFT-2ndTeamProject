@@ -53,6 +53,7 @@ $bestItem.addEventListener("click", (e) => {
 /* 상품 목록 불러오기 */
 const $swiperWrapper = document.querySelector(".swiper-wrapper");
 
+//json 내용 함수로 만들기
 function makeList(data) {
   $swiperWrapper.innerHTML = null;
   data.forEach((item) => {
@@ -70,14 +71,17 @@ function makeList(data) {
     </div>`;
     $swiperWrapper.appendChild($div);
 
+    //img hover 시 이름, 가격, 어둡게
     const $imgHover = document.querySelectorAll(".itemPic");
     const $imgExplain = document.querySelectorAll(".pic_explain");
 
     $imgHover.forEach((item, idx) => {
+      const imgChangeDarken = item.querySelector("img");
       item.addEventListener("mouseover", (e) => {
         $imgExplain.forEach((list, idx2) => {
           if (idx === idx2) {
             list.style.display = "block";
+            imgChangeDarken.style.filter = "brightness(65%)";
           }
         });
       });
@@ -85,6 +89,7 @@ function makeList(data) {
         $imgExplain.forEach((list, idx2) => {
           if (idx === idx2) {
             list.style.display = "none";
+            imgChangeDarken.style.filter = "none";
           }
         });
       });
