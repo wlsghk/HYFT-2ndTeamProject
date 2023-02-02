@@ -19,6 +19,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- AOS 라이브러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       /* 폰트 */
       @font-face {
@@ -62,14 +64,14 @@
 
       <!-- 추천, 신상품, 베스트 아이템 나열 -->
       <div id="contentItem">
-        <div class="item_title">
+        <div class="item_title" data-aos="fade-down" data-aos-duration="1000">
           WE SUPPORT
           <pre></pre>
           #HAPPINESS
         </div>
-        <div class="item_subTitle">행복한 순간 행복한 선택</div>
+        <div class="item_subTitle" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">행복한 순간 행복한 선택</div>
         <div class="item_emo">
-          <img src="./icon/happy.png" alt="행복" class="emo_happy" />
+          <img src="./icon/happy.png" alt="행복" class="emo_happy" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200"/>
         </div>
         <div class="item_menu">
           <div class="menu_recommend">Recommend</div>
@@ -97,7 +99,7 @@
 
       <!-- 기업 소개 -->
       <div id="contentUs">
-        <div class="us_hyft">
+        <div class="us_hyft amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
           <div class="hyft_container">
             <img src="./img/webMockUp.png" alt="" class="hyft_img" />
           </div>
@@ -110,7 +112,7 @@
             극대화시켜 줄 것입니다.
           </div>
         </div>
-        <div class="us_goals">
+        <div class="us_goals amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000">
           <div class="goals_container">
             <img src="./img/ourGoals.jpg" alt="" class="goals_img" />
           </div>
@@ -121,7 +123,7 @@
             당신의 모든 순간에 우리는 함께합니다.
           </div>
         </div>
-        <div class="us_package">
+        <div class="us_package amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1500">
           <div class="package_container">
             <img src="./img/packageMockUp.png" alt="" class="package_img" />
           </div>
@@ -137,7 +139,8 @@
       <!-- 기분별 상품 이동 -->
       <div id="contentMood">
         <!-- 왼쪽 -->
-        <div class="mood_left">
+        <div class="mood_left" data-aos="zoom-in-right" data-aos-duration="1000"
+        data-aos-delay="800">
           <div class="left_title">
             OTHER
             <pre></pre>
@@ -158,12 +161,16 @@
       <!-- 커뮤니티 이동 -->
       <section id="contentCommunity">
         <div class="community_emo">
-          <img src="./icon/happy.png" alt="" class="happy_emo" />
-          <img src="./icon/boring.png" alt="" class="bored_emo" />
-          <img src="./icon/sad2.png" alt="" class="sad_emo" />
-          <img src="./icon/nervous.png" alt="" class="nervous_emo" />
-          <img src="./icon/angry.png" alt="" class="angry_emo" />
-          <img src="./icon/sad.png" alt="" class="lonely_emo" />
+          <img src="./icon/happy.png" alt="" class="happy_emo amation" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="500" />
+          <img src="./icon/boring.png" alt="" class="bored_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
+        data-aos-delay="800" />
+          <img src="./icon/sad2.png" alt="" class="sad_emo amation" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="1100" />
+          <img src="./icon/nervous.png" alt="" class="nervous_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
+        data-aos-delay="1400" />
+          <img src="./icon/angry.png" alt="" class="angry_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
+        data-aos-delay="1700" /> 
+          <img src="./icon/sad.png" alt="" class="lonely_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
+        data-aos-delay="2000" />
         </div>
         <div class="commu_text">
         </div>
@@ -193,4 +200,9 @@
   <script src="./index.js"></script>
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </html>

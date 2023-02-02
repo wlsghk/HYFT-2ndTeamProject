@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+    background: #F0F0F0;
     }
 
 /* 컨테이너 틀 */
@@ -99,6 +99,10 @@ body::-webkit-scrollbar-track {
 /* 아이템 사진 */
 #contentItem .item_pic {
     display: flex;
+}
+
+#contentItem .item_pic_box {
+    cursor: pointer;
 }
 
 .item_pic_box div {
@@ -363,7 +367,7 @@ body::-webkit-scrollbar-track {
 .community_emo img {
     margin: 0 2.8vw;
 }
-
+/* 
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -404,7 +408,7 @@ body::-webkit-scrollbar-track {
 .lonely_emo {
     position: relative;
     animation: fadeInDown 3s;
-}
+} */
 
 #contentCommunity .commu_text {
     font-size: 3.75rem;
