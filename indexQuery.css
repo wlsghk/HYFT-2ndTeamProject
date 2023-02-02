@@ -1,3 +1,9 @@
+@media screen and (max-width: 1919.9px) {
+    #mainBanner {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 1240px) {
     .item_menu {
         font-size: 5.6452vw !important;
@@ -49,6 +55,9 @@
         margin-left: 30px !important;
     }
 
+    .fixed_img {
+        height: 65.5738vw !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -88,6 +97,10 @@
 
     #contentEmpty {
         height: 27.2vw;
+    }
+
+    .fixed_text {
+        font-size: 6.0000vw;
     }
 }
 

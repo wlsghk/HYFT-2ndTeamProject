@@ -140,7 +140,6 @@ function mobResize() {
   window.addEventListener("scroll", (e) => {
     if (innerWidth <= 1220) {
       $buyText.style.display = "none";
-      console.log("mobile");
     } else {
       $buyText.style.display = "block";
     }
