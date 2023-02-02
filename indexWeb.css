@@ -28,7 +28,7 @@ body {
 
 /* 배너 동영상 */
 #mainBanner {
-    height: 43vw;
+    height: 100%;
     overflow: hidden;
 }
 

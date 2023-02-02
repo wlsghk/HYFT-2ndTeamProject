@@ -183,3 +183,108 @@ function CommuTextChange() {
   });
 }
 CommuTextChange();
+
+/* 기분별 상품 이동 모양 변경 */
+const moodRightContent = document.querySelector(".mood_right_container");
+function moodRightChange() {
+  window.addEventListener("scroll", (e) => {
+    if (innerWidth > 1220) {
+      moodRightContent.innerHTML = `
+      <ul class="mood_right_content">
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/angry.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2 class="mood_title">ANGRY</h2>
+              <p class="mood_more_view">more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/nervous2.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2 class="mood_title">NERVOUS</h2>
+              <p class="mood_more_view">more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/bored.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2 class="mood_title">BORED</h2>
+              <p class="mood_more_view">more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/lonely2.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2 class="mood_title">LONELY</h2>
+              <p class="mood_more_view">more view</p>
+            </div>
+          </div>
+        </li>
+        <li class="mood_box">
+          <a href="#">
+            <img src="./img/emotion/lonely.jpg" />
+          </a>
+          <div class="mood_text">
+            <div>
+              <h2 class="mood_title">SAD</h2>
+              <p class="mood_more_view">more view</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      `;
+    } else {
+      moodRightContent.innerHTML = `
+              <ul class="mood_right_content">
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/angryMob.png" alt="" /></a>
+            <div class="mood_text">
+              <h2 class="mood_title">ANGRY</h2>
+            </div>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/nervousMob.png" alt="" /></a>
+            <div class="mood_text">
+              <h2 class="mood_title">NERVOUS</h2>
+            </div>
+          </li>
+          <li class="mood_box">
+            <a href="#"
+              ><img src="./img/emotion/boredMob.png" alt="" class="boredImg"
+            /></a>
+            <div class="mood_text">
+              <h2 class="mood_title">BORED</h2>
+            </div>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/lonelyMob.png" alt="" /></a>
+            <div class="mood_text">
+              <h2 class="mood_title">LONELY</h2>
+            </div>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/sadMob.png" alt="" /></a>
+            <div class="mood_text">
+              <h2 class="mood_title">SAD</h2>
+            </div>
+          </li>
+        </ul>`;
+    }
+  });
+}
+moodRightChange();
