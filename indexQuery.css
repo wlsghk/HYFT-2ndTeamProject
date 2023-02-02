@@ -188,6 +188,24 @@
     .package_subtitle {
         font-size: 3.0635vw;
     }
+
+    .mood_right_container {
+        width: 79.3651vw;
+        height: 132.3159vw;
+    }
+
+    .left_title {
+        margin-bottom: 19.0476vw;
+    }
+
+    .mood_right_container img {
+        width: 79.3651vw;
+    }
+
+    #contentMood .mood_box:hover .mood_text h2 {
+        font-size: 5.7143vw;
+        transform: translateY(-4.7619vw);
+      }
 }
 
 @media screen and (max-width: 520px) {
@@ -251,5 +269,13 @@
 
     .menu_recommend, .menu_new, .menu_best {
         font-size: 1.4125rem;
+    }
+
+    #contentUs {
+        padding: 7.5000vw;
+    }
+
+    .left_title {
+        margin: 79px;
     }
 }
