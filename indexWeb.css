@@ -211,7 +211,7 @@ body::-webkit-scrollbar-track {
 
 .hyft_title, .goals_title, .package_title {
     font-size: 3.125rem;
-    font-weight: 800;
+    font-weight: bolder;
     text-align: center;
 }
 
@@ -219,14 +219,16 @@ body::-webkit-scrollbar-track {
 .goals_subtitle,
 .package_subtitle {
     font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .hyft_subtitle {
-    padding-left: 4.6rem !important;
+    padding-left: 5.6rem !important;
 }
 
 .goals_subtitle {
-    padding-left: 2.55rem;
+    padding-left: 2.95rem;
 }
 
 /* 공백 */
