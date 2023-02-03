@@ -204,13 +204,13 @@ body::-webkit-scrollbar-track {
 }
 
 .us_hyft .hyft_img, .us_goals .goals_img, .us_package .package_img {
-    width: 25rem;
-    height: 31.25rem;
+    width: 23rem;
+    height: 28rem;
     border-radius: 18.75rem;
 }
 
 .hyft_title, .goals_title, .package_title {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
     font-weight: 800;
     text-align: center;
 }
@@ -218,15 +218,15 @@ body::-webkit-scrollbar-track {
 .hyft_subtitle,
 .goals_subtitle,
 .package_subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .hyft_subtitle {
-    padding-left: 5.5rem !important;
+    padding-left: 4.6rem !important;
 }
 
 .goals_subtitle {
-    padding-left: 1.75rem;
+    padding-left: 2.55rem;
 }
 
 /* 공백 */
