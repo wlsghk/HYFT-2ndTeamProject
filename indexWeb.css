@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track {
 #container {
     background: #FBF9F7;
     color: #272727;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard-Regular';
 }
 
 #top {
@@ -388,6 +388,7 @@ body::-webkit-scrollbar-track {
     font-size: 2.8125rem;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
+    cursor: pointer;
 }
 
 /* 배경 고정 이미지 */
