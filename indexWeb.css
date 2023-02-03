@@ -59,7 +59,8 @@ body::-webkit-scrollbar-track {
 #contentItem .item_title {
     font-style: normal;
     font-size: 3.75rem;
-    font-family: "Pretendard";
+    font-family: "Pretendard-Regular";
+    font-weight: bolder;
 }
 
 #contentItem .item_subTitle {
@@ -216,14 +217,14 @@ body::-webkit-scrollbar-track {
 .hyft_title, .goals_title, .package_title {
     font-size: 3.125rem;
     text-align: center;
-    font-family: "Pretendard";
+    font-family: "Pretendard-Regular";
+    font-weight: bolder;
 }
 
 .hyft_subtitle,
 .goals_subtitle,
 .package_subtitle {
     font-size: 1.25rem;
-    font-weight: 500;
     line-height: 30px;
 }
 
@@ -263,7 +264,7 @@ body::-webkit-scrollbar-track {
 }
 
 .left_title {
-    font-family: "Pretendard";
+    font-family: "Pretendard-Regular";
 }
 
 .left_buy img {
@@ -382,7 +383,8 @@ body::-webkit-scrollbar-track {
     font-size: 3.75rem;
     margin: 3rem 0;
     line-height: 5rem;
-    font-family: "Pretendard";
+    font-family: "Pretendard-Regular";
+    font-weight: bolder;
 }
 
 .commu_move {
