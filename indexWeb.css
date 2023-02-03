@@ -60,6 +60,7 @@ body::-webkit-scrollbar-track {
     font-style: normal;
     font-size: 3.75rem;
     font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #contentItem .item_subTitle {
@@ -213,6 +214,7 @@ body::-webkit-scrollbar-track {
     font-size: 3.125rem;
     text-align: center;
     font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hyft_subtitle,
@@ -223,11 +225,11 @@ body::-webkit-scrollbar-track {
 }
 
 .hyft_subtitle {
-    padding-left: 5.6rem !important;
+    padding-left: 4.99rem !important;
 }
 
 .goals_subtitle {
-    padding-left: 2.95rem;
+    padding-left: 2.45rem;
 }
 
 /* 공백 */
@@ -247,6 +249,11 @@ body::-webkit-scrollbar-track {
 #contentMood .mood_left span {
     position: absolute;
     margin-left: 7.8125rem;
+}
+
+.left_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
 }
 
 .mood_left .left_buy {
@@ -372,6 +379,7 @@ body::-webkit-scrollbar-track {
     margin: 3rem 0;
     line-height: 5rem;
     font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .commu_move {
