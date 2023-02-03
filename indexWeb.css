@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track {
 #container {
     background: #FBF9F7;
     color: #272727;
-    font-family: 'Pretendard';
+    font-family: "Pretendard-Regular";
 }
 
 #top {
@@ -58,8 +58,8 @@ body::-webkit-scrollbar-track {
 
 #contentItem .item_title {
     font-style: normal;
-    font-weight: 800;
     font-size: 3.75rem;
+    font-family: "Pretendard";
 }
 
 #contentItem .item_subTitle {
@@ -187,6 +187,10 @@ body::-webkit-scrollbar-track {
     animation: marquee 60s linear infinite;
 }
 
+.line_move .line_text {
+    font-family: "Pretendard-Regular";
+}
+
 #contentLine .line_img {
     position: relative;
 }
@@ -212,8 +216,7 @@ body::-webkit-scrollbar-track {
 .hyft_title, .goals_title, .package_title {
     font-size: 3.125rem;
     text-align: center;
-    font-family: "LeferiPoint-BlackA";
-    font-weight: bolder;
+    font-family: "Pretendard";
 }
 
 .hyft_subtitle,
@@ -257,6 +260,10 @@ body::-webkit-scrollbar-track {
     font-weight: 400;
     margin-top: 8.125rem;
     margin-left: 18.75rem;
+}
+
+.left_title {
+    font-family: "Pretendard";
 }
 
 .left_buy img {
@@ -373,9 +380,9 @@ body::-webkit-scrollbar-track {
 
 #contentCommunity .commu_text {
     font-size: 3.75rem;
-    font-weight: bolder;
     margin: 3rem 0;
     line-height: 5rem;
+    font-family: "Pretendard";
 }
 
 .commu_move {
