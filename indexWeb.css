@@ -157,7 +157,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 6.25rem 0;
+    padding: 7rem 0;
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 6.25rem;
@@ -367,48 +367,6 @@ body::-webkit-scrollbar-track {
 .community_emo img {
     margin: 0 2.8vw;
 }
-/* 
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-        }
-    
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-        }
-}
-
-.happy_emo {
-    position: relative;
-    animation: fadeInDown 0.5s;
-}
-
-.bored_emo {
-    position: relative;
-    animation: fadeInDown 1s;
-}
-
-.sad_emo {
-    position: relative;
-    animation: fadeInDown 1.5s;
-}
-
-.nervous_emo {
-    position: relative;
-    animation: fadeInDown 2s;
-}
-
-.angry_emo {
-    position: relative;
-    animation: fadeInDown 2.5s;
-}
-
-.lonely_emo {
-    position: relative;
-    animation: fadeInDown 3s;
-} */
 
 #contentCommunity .commu_text {
     font-size: 3.75rem;
