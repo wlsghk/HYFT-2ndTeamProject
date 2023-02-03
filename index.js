@@ -6,6 +6,7 @@ const $bestItem = document.querySelector(".menu_best");
 let newarrivalItemList = null;
 let recommendItemList = null;
 let bestItemList = null;
+let lonelyItemList = null;
 
 fetch("./json/newarrivals.json")
   .then((res) => res.json())
@@ -25,6 +26,12 @@ fetch("./json/bestitem.json")
   .then((result) => {
     bestItemList = result;
   }); //fetch는 그냥 처음 한번만 연결하면 됨!
+
+fetch("./json/lonelyitem.json")
+  .then((res) => res.json())
+  .then((result) => {
+    lonelyItemList = result;
+  });
 
 /* 신상품 */
 $newArrivals.addEventListener("click", (e) => {
@@ -49,6 +56,8 @@ $bestItem.addEventListener("click", (e) => {
   $recommend.classList.remove("menu_line");
   makeList(bestItemList);
 });
+
+/* 우울함 상품 교체 */
 
 /* 상품 목록 불러오기 */
 const $swiperWrapper = document.querySelector(".swiper-wrapper");
@@ -308,70 +317,6 @@ $topBtn.addEventListener("click", (e) => {
   });
 });
 
-/* smooth scroll
-class Scrooth {
-  constructor({
-    element = window,
-    strength = 10,
-    acceleration = 1.2,
-    deceleration = 0.975,
-  } = {}) {
-    this.element = element;
-    this.distance = strength;
-    this.acceleration = acceleration;
-    this.deceleration = deceleration;
-    this.running = false;
-
-    this.element.addEventListener("wheel", this.scrollHandler.bind(this), {
-      passive: false,
-    });
-    this.element.addEventListener("mousewheel", this.scrollHandler.bind(this), {
-      passive: false,
-    });
-    this.scroll = this.scroll.bind(this);
-  }
-
-  scrollHandler(e) {
-    e.preventDefault();
-
-    if (!this.running) {
-      this.top = this.element.pageYOffset || this.element.scrollTop || 0;
-      this.running = true;
-      this.currentDistance = e.deltaY > 0 ? 0.1 : -0.1;
-      this.isDistanceAsc = true;
-      this.scroll();
-    } else {
-      this.isDistanceAsc = false;
-      this.currentDistance = e.deltaY > 0 ? this.distance : -this.distance;
-    }
-  }
-
-  scroll() {
-    if (this.running) {
-      this.currentDistance *=
-        this.isDistanceAsc === true ? this.acceleration : this.deceleration;
-      Math.abs(this.currentDistance) < 0.1 && this.isDistanceAsc === false
-        ? (this.running = false)
-        : 1;
-      Math.abs(this.currentDistance) >= Math.abs(this.distance)
-        ? (this.isDistanceAsc = false)
-        : 1;
-
-      this.top += this.currentDistance;
-      this.element.scrollTo(0, this.top);
-
-      requestAnimationFrame(this.scroll);
-    }
-  }
-}
-
-const scroll = new Scrooth({
-  element: window,
-  strength: 20,
-  acceleration: 1.5,
-  deceleration: 0.975,
-}); */
-
 /* 스크롤 시 깜빡이는 애니메이션 */
 (function () {
   let observer = new IntersectionObserver((e) => {
@@ -415,6 +360,7 @@ $happyEmo.addEventListener("click", (e) => {
   $nervousEmo.style.opacity = "0.4";
   $nervousEmo.style.width = "3.125rem";
 
+  //행복 이모티콘 누르면 타이틀과 상품 변경
   $itemTitle.innerHTML = `
   WE SUPPORT
   <pre></pre>
@@ -423,6 +369,8 @@ $happyEmo.addEventListener("click", (e) => {
   $itemSubTitle.innerHTML = `
   행복한 순간 행복한 선택
   `;
+
+  makeList(newarrivalItemList);
 });
 
 $boringEmo.addEventListener("click", (e) => {
@@ -507,4 +455,5 @@ $lonelyEmo.addEventListener("click", (e) => {
   $itemSubTitle.innerHTML = `
   외로운 당신을 위로하는 선택
   `;
+  makeList(lonelyItemList);
 });
