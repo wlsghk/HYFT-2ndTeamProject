@@ -176,6 +176,9 @@
 }
 
 @media screen and (max-width: 630px) {
+    .item_emo_happy, .item_emo_boring, .item_emo_sad, .item_emo_lonely, .item_emo_angry, .item_emo_nervous {
+    width: 7.9365vw !important;
+}
     .hyft_title,
     .goals_title,
     .package_title,

@@ -479,3 +479,19 @@ $lonelyEmo.addEventListener("click", (e) => {
   `;
   makeList(lonelyItemList);
 });
+
+/* 모바일에서 aos 애니메이션 삭제 */
+window.addEventListener("resize", (e) => {
+  if (innerWidth < 630) {
+    const $div = document.querySelectorAll("div");
+    const $img = document.querySelectorAll("img");
+    for (let i = 0; i < $div.length; i++) {
+      $div[i].removeAttribute("data-aos");
+      {
+        for (let j = 0; j < $img.length; j++) {
+          $img[j].removeAttribute("data-aos");
+        }
+      }
+    }
+  }
+});
