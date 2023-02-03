@@ -206,11 +206,6 @@
         transform: rotateY(0deg) scale(1) !important;
       }
 
-    #contentMood .mood_box:hover .mood_text h2 {
-        font-size: 5.7143vw;
-        transform: none !important;
-      }
-
 }
 
 @media screen and (max-width: 520px) {

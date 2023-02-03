@@ -257,7 +257,7 @@ function moodRightChange() {
         </li>
       </ul>
       `;
-    } else {
+    } else if (innerWidth > 630) {
       moodRightContent.innerHTML = `
         <ul class="mood_right_content">
           <li class="mood_box">
@@ -291,6 +291,28 @@ function moodRightChange() {
             <div class="mood_text">
               <h2 class="mood_title">SAD</h2>
             </div>
+          </li>
+        </ul>`;
+    } else {
+      moodRightContent.innerHTML = `
+        <ul class="mood_right_content">
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/angryMob.png" alt="" /></a>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/nervousMob.png" alt="" /></a>
+          </li>
+          <li class="mood_box">
+            <a href="#"
+              ><img src="./img/emotion/boredMob.png" alt="" class="boredImg"
+            /></a>
+            </div>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/lonelyMob.png" alt="" /></a>
+          </li>
+          <li class="mood_box">
+            <a href="#"><img src="./img/emotion/sadMob.png" alt="" /></a>
           </li>
         </ul>`;
     }
