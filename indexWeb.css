@@ -78,6 +78,20 @@ body::-webkit-scrollbar-track {
     margin-bottom: 2.5vw;
 }
 
+.item_emo img {
+    margin: 0 2.8vw;
+    cursor: pointer;
+}
+
+.item_emo_boring,
+.item_emo_sad,
+.item_emo_lonely,
+.item_emo_angry,
+.item_emo_nervous {
+    width: 3.125rem;
+    opacity: 0.4;
+}
+
 #contentItem .item_menu {
     display: flex;
     font-family: 'Cormorant SC', serif;

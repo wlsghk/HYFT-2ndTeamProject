@@ -389,3 +389,122 @@ const scroll = new Scrooth({
     observer.observe($animation[i]);
   }
 })();
+
+/* 이모티콘 클릭 시 추천 상품 변경 */
+const $happyEmo = document.querySelector(".item_emo_happy");
+const $boringEmo = document.querySelector(".item_emo_boring");
+const $sadEmo = document.querySelector(".item_emo_sad");
+const $lonelyEmo = document.querySelector(".item_emo_lonely");
+const $angryEmo = document.querySelector(".item_emo_angry");
+const $nervousEmo = document.querySelector(".item_emo_nervous");
+
+const $itemTitle = document.querySelector(".item_title");
+const $itemSubTitle = document.querySelector(".item_subTitle");
+
+$happyEmo.addEventListener("click", (e) => {
+  $happyEmo.style.opacity = "1";
+  $happyEmo.style.width = "5rem";
+  $boringEmo.style.opacity = "0.4";
+  $boringEmo.style.width = "3.125rem";
+  $sadEmo.style.opacity = "0.4";
+  $sadEmo.style.width = "3.125rem";
+  $lonelyEmo.style.opacity = "0.4";
+  $lonelyEmo.style.width = "3.125rem";
+  $angryEmo.style.opacity = "0.4";
+  $angryEmo.style.width = "3.125rem";
+  $nervousEmo.style.opacity = "0.4";
+  $nervousEmo.style.width = "3.125rem";
+
+  $itemTitle.innerHTML = `
+  WE SUPPORT
+  <pre></pre>
+  #HAPPINESS
+  `;
+  $itemSubTitle.innerHTML = `
+  행복한 순간 행복한 선택
+  `;
+});
+
+$boringEmo.addEventListener("click", (e) => {
+  $boringEmo.style.opacity = "1";
+  $boringEmo.style.width = "5rem";
+  $happyEmo.style.opacity = "0.4";
+  $happyEmo.style.width = "3.125rem";
+  $sadEmo.style.opacity = "0.4";
+  $sadEmo.style.width = "3.125rem";
+  $lonelyEmo.style.opacity = "0.4";
+  $lonelyEmo.style.width = "3.125rem";
+  $angryEmo.style.opacity = "0.4";
+  $angryEmo.style.width = "3.125rem";
+  $nervousEmo.style.opacity = "0.4";
+  $nervousEmo.style.width = "3.125rem";
+});
+
+$sadEmo.addEventListener("click", (e) => {
+  $sadEmo.style.opacity = "1";
+  $sadEmo.style.width = "5rem";
+  $happyEmo.style.opacity = "0.4";
+  $happyEmo.style.width = "3.125rem";
+  $boringEmo.style.opacity = "0.4";
+  $boringEmo.style.width = "3.125rem";
+  $lonelyEmo.style.opacity = "0.4";
+  $lonelyEmo.style.width = "3.125rem";
+  $angryEmo.style.opacity = "0.4";
+  $angryEmo.style.width = "3.125rem";
+  $nervousEmo.style.opacity = "0.4";
+  $nervousEmo.style.width = "3.125rem";
+});
+
+$nervousEmo.addEventListener("click", (e) => {
+  $nervousEmo.style.opacity = "1";
+  $nervousEmo.style.width = "5rem";
+  $happyEmo.style.opacity = "0.4";
+  $happyEmo.style.width = "3.125rem";
+  $boringEmo.style.opacity = "0.4";
+  $boringEmo.style.width = "3.125rem";
+  $sadEmo.style.opacity = "0.4";
+  $sadEmo.style.width = "3.125rem";
+  $angryEmo.style.opacity = "0.4";
+  $angryEmo.style.width = "3.125rem";
+  $lonelyEmo.style.opacity = "0.4";
+  $lonelyEmo.style.width = "3.125rem";
+});
+
+$angryEmo.addEventListener("click", (e) => {
+  $angryEmo.style.opacity = "1";
+  $angryEmo.style.width = "5rem";
+  $happyEmo.style.opacity = "0.4";
+  $happyEmo.style.width = "3.125rem";
+  $boringEmo.style.opacity = "0.4";
+  $boringEmo.style.width = "3.125rem";
+  $sadEmo.style.opacity = "0.4";
+  $sadEmo.style.width = "3.125rem";
+  $nervousEmo.style.opacity = "0.4";
+  $nervousEmo.style.width = "3.125rem";
+  $lonelyEmo.style.opacity = "0.4";
+  $lonelyEmo.style.width = "3.125rem";
+});
+
+$lonelyEmo.addEventListener("click", (e) => {
+  $lonelyEmo.style.opacity = "1";
+  $lonelyEmo.style.width = "5rem";
+  $happyEmo.style.opacity = "0.4";
+  $happyEmo.style.width = "3.125rem";
+  $boringEmo.style.opacity = "0.4";
+  $boringEmo.style.width = "3.125rem";
+  $sadEmo.style.opacity = "0.4";
+  $sadEmo.style.width = "3.125rem";
+  $angryEmo.style.opacity = "0.4";
+  $angryEmo.style.width = "3.125rem";
+  $nervousEmo.style.opacity = "0.4";
+  $nervousEmo.style.width = "3.125rem";
+  //외로움 이모티콘을 누르면 타이틀과 상품 변경
+  $itemTitle.innerHTML = `
+  YOU FEEL
+  <pre></pre>
+  #LONELY
+  `;
+  $itemSubTitle.innerHTML = `
+  외로운 당신을 위로하는 선택
+  `;
+});
