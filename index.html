@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css 연결 -->
     <link rel="stylesheet" href="indexWeb.css" />
-    <link rel="stylesheet" href="indexQuery.css">
+    <link rel="stylesheet" href="indexQuery.css" />
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +20,16 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- AOS 라이브러리 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       /* 폰트 */
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
       @font-face {
         font-family: "Pretendard-Regular";
         src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -32,7 +39,6 @@
       }
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
       @import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Prompt:wght@900&display=swap');
       /* 아이콘 */
       @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     </style>
@@ -70,9 +76,23 @@
           <pre></pre>
           #HAPPINESS
         </div>
-        <div class="item_subTitle" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">행복한 순간 행복한 선택</div>
+        <div
+          class="item_subTitle"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          행복한 순간 행복한 선택
+        </div>
         <div class="item_emo">
-          <img src="./icon/happy.png" alt="행복" class="emo_happy" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200"/>
+          <img
+            src="./icon/happy.png"
+            alt="행복"
+            class="emo_happy"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          />
         </div>
         <div class="item_menu">
           <div class="menu_recommend">Recommend</div>
@@ -100,7 +120,12 @@
 
       <!-- 기업 소개 -->
       <div id="contentUs">
-        <div class="us_hyft amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+        <div
+          class="us_hyft amation"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <div class="hyft_container">
             <img src="./img/webMockUp.png" alt="" class="hyft_img" />
           </div>
@@ -113,7 +138,12 @@
             극대화시켜 줄 것입니다.
           </div>
         </div>
-        <div class="us_goals amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000">
+        <div
+          class="us_goals amation"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        >
           <div class="goals_container">
             <img src="./img/ourGoals.jpg" alt="" class="goals_img" />
           </div>
@@ -124,7 +154,12 @@
             당신의 모든 순간에 우리는 함께합니다.
           </div>
         </div>
-        <div class="us_package amation" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1500">
+        <div
+          class="us_package amation"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+        >
           <div class="package_container">
             <img src="./img/packageMockUp.png" alt="" class="package_img" />
           </div>
@@ -140,8 +175,12 @@
       <!-- 기분별 상품 이동 -->
       <div id="contentMood">
         <!-- 왼쪽 -->
-        <div class="mood_left" data-aos="zoom-in-right" data-aos-duration="1000"
-        data-aos-delay="800">
+        <div
+          class="mood_left"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <div class="left_title">
             OTHER
             <pre></pre>
@@ -153,50 +192,84 @@
           </div>
         </div>
         <!-- 오른쪽 -->
-        <div class="mood_right_container">
-        </div>
+        <div class="mood_right_container"></div>
       </div>
 
       <div id="contentEmpty"></div>
 
-      <!-- 커뮤니티 이동 -->
       <div id="contentCommunity">
         <div class="community_emo">
-          <img src="./icon/happy.png" alt="" class="happy_emo amation" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="500" />
-          <img src="./icon/boring.png" alt="" class="bored_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
-        data-aos-delay="800" />
-          <img src="./icon/sad2.png" alt="" class="sad_emo amation" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="1100" />
-          <img src="./icon/nervous.png" alt="" class="nervous_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
-        data-aos-delay="1400" />
-          <img src="./icon/angry.png" alt="" class="angry_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
-        data-aos-delay="1700" /> 
-          <img src="./icon/sad.png" alt="" class="lonely_emo amation" data-aos="zoom-out-down" data-aos-duration="1000"
-        data-aos-delay="2000" />
+          <img
+            src="./icon/happy.png"
+            alt=""
+            class="happy_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          />
+          <img
+            src="./icon/boring.png"
+            alt=""
+            class="bored_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          />
+          <img
+            src="./icon/sad2.png"
+            alt=""
+            class="sad_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+          />
+          <img
+            src="./icon/nervous.png"
+            alt=""
+            class="nervous_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="1400"
+          />
+          <img
+            src="./icon/angry.png"
+            alt=""
+            class="angry_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="1700"
+          />
+          <img
+            src="./icon/sad.png"
+            alt=""
+            class="lonely_emo amation"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            data-aos-delay="2000"
+          />
         </div>
-        <div class="commu_text">
-        </div>
+        <div class="commu_text"></div>
         <div class="commu_move">
           <img src="./img/memo.png" alt="" class="memo_img" />
           <div class="memo_text">write now!</div>
-        </div>
         </div>
       </div>
       <div id="contentEmpty"></div>
 
       <!-- 배경 고정 이미지 -->
-      <section id="contentFixedImg">
+      <div id="contentFixedImg">
         <div class="fixed_img">
           <div class="fixed_text">All emotions are precious.</div>
         </div>
-      </section>
+      </div>
 
       <!-- 탑 버튼 -->
       <button id="topBtn">Top</button>
 
+      <div id="contentEmpty"></div>
     </div>
-
-    <div id="contentEmpty"></div>
   </body>
+
   <!-- js 연결 -->
   <script src="./index.js"></script>
   <!-- Swiper -->
@@ -204,6 +277,6 @@
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-      AOS.init();
+    AOS.init();
   </script>
 </html>

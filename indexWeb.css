@@ -59,7 +59,6 @@ body::-webkit-scrollbar-track {
 #contentItem .item_title {
     font-style: normal;
     font-size: 3.75rem;
-    font-family: "Pretendard-Regular";
     font-weight: bolder;
 }
 
@@ -188,10 +187,6 @@ body::-webkit-scrollbar-track {
     animation: marquee 60s linear infinite;
 }
 
-.line_move .line_text {
-    font-family: "Pretendard-Regular";
-}
-
 #contentLine .line_img {
     position: relative;
 }
@@ -217,7 +212,6 @@ body::-webkit-scrollbar-track {
 .hyft_title, .goals_title, .package_title {
     font-size: 3.125rem;
     text-align: center;
-    font-family: "Pretendard-Regular";
     font-weight: bolder;
 }
 
@@ -263,10 +257,6 @@ body::-webkit-scrollbar-track {
     margin-left: 18.75rem;
 }
 
-.left_title {
-    font-family: "Pretendard-Regular";
-}
-
 .left_buy img {
     width: 3.125rem;
 }
@@ -301,6 +291,7 @@ body::-webkit-scrollbar-track {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
+    cursor: pointer;
 }
     
 #contentMood ul:hover li {
@@ -336,7 +327,6 @@ body::-webkit-scrollbar-track {
     font-size: 2.25rem;
     transform: translateY(200px);
     transition-delay: 0.3s;
-    font-weight: 600;
 }
     
 #contentMood .mood_box .mood_text p {
@@ -344,24 +334,22 @@ body::-webkit-scrollbar-track {
     transition: 0.3s;
     font-size: 1.3rem;
     transform: translateY(180px);
-    transition-delay: 0.4s;
-    font-weight: 100;
+    transition-delay: 0.4s; 
+    font-family: 'Montserrat' !important;
+    font-weight: 100 !important;
 }
-    
+
 #contentMood .mood_box:hover .mood_text h2 {
     transform: translateY(-150px);
 }
     
 #contentMood .mood_box:hover .mood_text p {
     transform: translateY(-150px);
+    font-weight: thin !important;
 }
     
 .mood_box img {
     width: 31.25rem;
-}
-    
-#contentMood .mood_subtitle {
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* 커뮤니티 이동 */
@@ -383,7 +371,6 @@ body::-webkit-scrollbar-track {
     font-size: 3.75rem;
     margin: 3rem 0;
     line-height: 5rem;
-    font-family: "Pretendard-Regular";
     font-weight: bolder;
 }
 

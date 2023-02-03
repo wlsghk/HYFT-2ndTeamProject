@@ -204,7 +204,7 @@ function moodRightChange() {
         </li>
         <li class="mood_box">
           <a href="#">
-            <img src="./img/emotion/nervous2.jpg" />
+            <img src="./img/emotion/nervous.jpg" />
           </a>
           <div class="mood_text">
             <div>
@@ -226,7 +226,7 @@ function moodRightChange() {
         </li>
         <li class="mood_box">
           <a href="#">
-            <img src="./img/emotion/lonely2.jpg" />
+            <img src="./img/emotion/lonely.jpg" />
           </a>
           <div class="mood_text">
             <div>
@@ -237,7 +237,7 @@ function moodRightChange() {
         </li>
         <li class="mood_box">
           <a href="#">
-            <img src="./img/emotion/lonely.jpg" />
+            <img src="./img/emotion/sad.jpg" />
           </a>
           <div class="mood_text">
             <div>
