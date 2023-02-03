@@ -495,3 +495,5 @@ window.addEventListener("resize", (e) => {
     }
   }
 });
+
+/* ContentMood 타이틀 변경 */
