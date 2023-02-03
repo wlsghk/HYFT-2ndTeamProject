@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track {
 #container {
     background: #FBF9F7;
     color: #272727;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
 }
 
 #top {
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-track {
 
 /* 움직이는 라인 */
 #contentLine {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 6.25rem;
     color: #E9DDD4;
     position: relative;
@@ -211,8 +211,9 @@ body::-webkit-scrollbar-track {
 
 .hyft_title, .goals_title, .package_title {
     font-size: 3.125rem;
-    font-weight: bolder;
     text-align: center;
+    font-family: "LeferiPoint-BlackA";
+    font-weight: bolder;
 }
 
 .hyft_subtitle,
@@ -372,7 +373,7 @@ body::-webkit-scrollbar-track {
 
 #contentCommunity .commu_text {
     font-size: 3.75rem;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 3rem 0;
     line-height: 5rem;
 }
