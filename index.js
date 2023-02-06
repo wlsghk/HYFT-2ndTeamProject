@@ -8,6 +8,53 @@ let recommendItemList = null;
 let bestItemList = null;
 let lonelyItemList = null;
 
+// 헤더전체 시작
+const $up = document.querySelector(".header-up");
+const $upX = document.querySelector(".header-up .fa-xmark");
+const $barIcon = document.querySelector(".fa-bars");
+const $barMenu = document.querySelector(".bar-menu");
+const $cartIcon = document.querySelector(".fa-cart-shopping");
+const $cartMenu = document.querySelector(".cart-menu");
+const $cartX = document.querySelector(".cart-right-title .fa-xmark");
+
+$upX.addEventListener("click", () => {
+  $up.style.display = "none";
+});
+$barIcon.addEventListener("click", () => {
+  if ($barMenu.classList.contains("hidden")) {
+    $barMenu.classList.toggle("hidden");
+    $cartMenu.classList.toggle("hidden", true);
+    $barMenu.classList.remove("menu-off");
+    $barMenu.classList.add("menu-on");
+  } else {
+    $barMenu.classList.remove("menu-on");
+    $barMenu.classList.add("menu-off");
+    setTimeout(() => {
+      $barMenu.classList.toggle("hidden");
+      $cartMenu.classList.toggle("hidden", true);
+    }, 1400);
+  }
+});
+$cartIcon.addEventListener("click", () => {
+  if ($cartMenu.classList.contains("hidden")) {
+    $cartMenu.classList.toggle("hidden");
+    $barMenu.classList.toggle("hidden", true);
+    $cartMenu.classList.remove("cart-off");
+    $cartMenu.classList.add("cart-on");
+  }
+});
+$cartX.addEventListener("click", () => {
+  if (!$cartMenu.classList.contains("hidden")) {
+    $cartMenu.classList.remove("cart-on");
+    $cartMenu.classList.add("cart-off");
+    setTimeout(() => {
+      $cartMenu.classList.toggle("hidden");
+      $barMenu.classList.toggle("hidden", true);
+    }, 900);
+  }
+});
+//헤더끝
+
 fetch("./json/newarrivals.json")
   .then((res) => res.json())
   .then((result) => {
@@ -73,9 +120,7 @@ function makeList(data) {
       <img src="${item.image}">
       <div class="pic_explain">
         <p class="item_title_${item.id}">${item.title}</p>
-        <p class="item_price_${item.id}">${item.price.toLocaleString(
-      "ko-KR"
-    )}원</p>
+        <p class="item_price_${item.id}">${item.price.toLocaleString("ko-KR")}원</p>
       </div>
     </div>`;
     $swiperWrapper.appendChild($div);
@@ -165,7 +210,7 @@ mobResize();
 const $CommuText = document.querySelector(".commu_text");
 
 function CommuTextChange() {
-  window.addEventListener("scroll", (e) => {
+  window.addEventListener("load", (e) => {
     if (innerWidth > 750) {
       $CommuText.innerHTML = `
           <span>#HAPPY</span><span>#EXCITED</span><span>#ANGRY</span><span>#SLEEPY</span>
@@ -189,9 +234,42 @@ function CommuTextChange() {
           <span>#LONELY</span><span>#CALM</span>
       `;
     }
+
+    //스크롤 글자 배경색 변경--------------------------------------------------
+    const $box = document.querySelector("#contentCommunity");
+    const $dummy = document.querySelector("#contentEmpty-choi");
+    const $dummy2 = document.querySelector("#contentEmpty2");
+    const $dummy3 = document.querySelector("#contentEmpty3");
+    const $span = document.querySelectorAll(".commu_text span");
+    const $container = document.querySelector("#container");
+    const $contentMood = document.querySelector("#contentMood");
+    const $contentFixedImg = document.querySelector("#contentFixedImg");
+    $span.forEach((e) => {
+      e.style.transition = "all 0.3s";
+    });
+    addEventListener("scroll", () => {
+      let value = window.scrollY;
+      if (value > 3000 && value < 7800) {
+        let aa = Math.round(value * 0.003) - 12;
+        const cal251 = Math.min((8500 - value) * 0.05, 251);
+        const cal249 = Math.min((8500 - value) * 0.05, 249);
+        const cal247 = Math.min((8500 - value) * 0.05, 247);
+        $box.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $dummy.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $dummy2.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $dummy3.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $container.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $contentMood.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $contentFixedImg.style.backgroundColor = `rgb(${cal251},${cal249},${cal247})`;
+        $span[aa].style.color = `white`;
+      }
+    });
   });
+  // ---------------------------------------------------------------------------------------------
 }
 CommuTextChange();
+
+// --------------------------------------------------------
 
 /* 기분별 상품 이동 모양 변경 */
 const moodRightContent = document.querySelector(".mood_right_container");
