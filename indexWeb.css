@@ -31,8 +31,8 @@ header {
   align-items: center;
   font-size: 12px;
   width: 100%;
-  height: 20px;
-  background-color: white;
+  height: 30px;
+  background-color: #C9C7BB;
 }
 .header-up .fa-xmark {
   position: absolute;
@@ -438,7 +438,7 @@ body::-webkit-scrollbar-track {
 
 /* 배너 동영상 */
 #mainBanner {
-  height: 100%;
+  height: 48.8vw;
   overflow: hidden;
 }
 
@@ -474,16 +474,25 @@ body::-webkit-scrollbar-track {
   margin-bottom: 2.5vw;
 }
 
-.item_emo > img {
+.item_emo {
+  margin: 0 2.8vw;
+  cursor: pointer;
+}
+
+/* .item_emo > img {
   margin: 0 2.8vw;
   cursor: pointer;
   opacity: 0.4;
   width: 3.125rem
-}
+} */
 
-.item_emo > img.selected {
+/* .item_emo > img.selected {
   width: 5rem;
   opacity: 1;
+} */
+
+.item_emo_happy {
+  margin: 0 2.8vw;
 }
 
 .item_emo_boring,
@@ -493,11 +502,12 @@ body::-webkit-scrollbar-track {
 .item_emo_nervous {
   width: 3.125rem;
   opacity: 0.4;
+  margin: 0 2.8vw;
 }
 
 #contentItem .item_menu {
   display: flex;
-  font-size: 5.6452vw;
+  font-size: 4.5vw;
   letter-spacing: -0.35vw;
   justify-content: center;
   margin-bottom: 2.5vw;
@@ -681,11 +691,13 @@ body::-webkit-scrollbar-track {
 #contentMood .mood_left span {
   position: absolute;
   margin-left: 7.8125rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .left_title {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
+  margin: 0 !important;
 }
 
 .mood_left .left_buy {
@@ -701,8 +713,8 @@ body::-webkit-scrollbar-track {
 }
 
 .mood_right_container {
-  width: 31.25rem;
-  height: 37.5rem;
+  width: 40rem; /* 가로 크기 조절 */
+  height: 35.5rem;
   overflow: hidden;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -710,7 +722,7 @@ body::-webkit-scrollbar-track {
 }
 
 #contentMood .mood_left {
-  font-size: 3.75rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
@@ -721,7 +733,7 @@ body::-webkit-scrollbar-track {
 #contentMood .mood_box {
   position: relative;
   display: block;
-  width: 5rem;
+  width: 7rem; /* 한칸 크기 조절 */
   float: left;
   border-left: 1px solid #888;
   box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
@@ -779,16 +791,16 @@ body::-webkit-scrollbar-track {
 }
 
 #contentMood .mood_box:hover .mood_text h2 {
-  transform: translateY(-150px);
+  transform: translateY(-200px);
 }
 
 #contentMood .mood_box:hover .mood_text p {
-  transform: translateY(-150px);
+  transform: translateY(-200px);
   font-weight: thin !important;
 }
 
 .mood_box img {
-  width: 31.25rem;
+  width: 40rem !important;
 }
 
 /* 커뮤니티 이동 */
@@ -833,7 +845,6 @@ body::-webkit-scrollbar-track {
   transform: translate(-50%, -50%) rotate(-20deg);
   font-family: "Nanum Brush Script", cursive;
   font-size: 2.8125rem;
-  text-decoration: underline;
   text-underline-offset: 0.5rem;
   cursor: pointer;
 }
