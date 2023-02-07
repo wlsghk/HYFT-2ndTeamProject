@@ -85,6 +85,8 @@ $newArrivals.addEventListener("click", (e) => {
   $newArrivals.classList.add("menu_line");
   $recommend.classList.remove("menu_line");
   $bestItem.classList.remove("menu_line");
+  $newArrivals.style.color = "black";
+  $recommend.style.color = "#cfcfcf";
   makeList(newarrivalItemList);
 });
 
@@ -93,6 +95,9 @@ $recommend.addEventListener("click", (e) => {
   $recommend.classList.add("menu_line");
   $newArrivals.classList.remove("menu_line");
   $bestItem.classList.remove("menu_line");
+  $recommend.style.color = "black";
+  $newArrivals.style.color = "#cfcfcf";
+  $bestItem.style.color = "#cfcfcf";
   makeList(recommendItemList);
 });
 
@@ -101,6 +106,9 @@ $bestItem.addEventListener("click", (e) => {
   $bestItem.classList.add("menu_line");
   $newArrivals.classList.remove("menu_line");
   $recommend.classList.remove("menu_line");
+  $bestItem.style.color = "black";
+  $newArrivals.style.color = "#cfcfcf";
+  $recommend.style.color = "#cfcfcf";
   makeList(bestItemList);
 });
 
@@ -572,5 +580,3 @@ window.addEventListener("resize", (e) => {
     }
   }
 });
-
-/* ContentMood 타이틀 변경 */
