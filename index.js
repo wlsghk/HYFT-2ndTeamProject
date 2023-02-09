@@ -231,7 +231,7 @@ function CommuTextChange() {
       `;
     } else {
       $CommuText.innerHTML = `
-          <span>#HAPPY&nbsp;</span><span>#EXCITED;</span>
+          <span>#HAPPY&nbsp;</span><span>#EXCITED</span>
           <pre></pre>
           <span>#ANGRY&nbsp;</span><span>#SLEEPY</span>
           <pre></pre>

@@ -162,10 +162,13 @@ header {
     justify-content: flex-end;
   }
   .bar-left .bar-img {
-    background-color: white;
+    background: url('./img/listGif.gif') no-repeat;
     width: 70%;
     height: 50%;
+    background-size: cover;
   }
+
+
 }
 
 @media (min-width: 837px) {
@@ -186,7 +189,7 @@ header {
     justify-content: flex-end;
   }
   .bar-left .bar-img {
-    background-color: white;
+    background: url('./img/listGif.gif') no-repeat;
     width: 400px;
     height: 520px;
     margin-top: 80px;
@@ -257,6 +260,9 @@ header {
     right: -100%;
   }
 }
+.car-right {
+  padding-left: 50px;
+}
 @media (max-width: 836px) {
   .cart-menu {
     width: 100%;
@@ -264,14 +270,13 @@ header {
     background-color: #f2f1ee;
     position: fixed;
     display: flex;
-    padding: 50px 100px 0 50px;
+    padding: 50px 11.9617vw 0 5.9809vw;
     z-index: 10000;
   }
   .cart-left {
     display: none;
   }
   .cart-right {
-    padding-left: 50px;
     width: 700px;
     display: flex;
     align-items: center;
@@ -295,8 +300,19 @@ header {
   .cart-right-box {
     width: 100%;
     height: 280px;
-    background-color: white;
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  
+  .right_box_img img{
+    width: 278.56px;
+  }
+  .right_box_text {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
   .cart-right-continue {
     background-color: #c9c7bb;
@@ -353,10 +369,19 @@ header {
     text-align: center;
     margin-top: 10px;
   }
-  .cart-left-photo {
+  .cart-left-photo1 {
     width: 200px;
     height: 200px;
     background-color: white;
+    background: url('./img/item/bestItem10.png');
+    background-size: cover;
+  }
+  .cart-left-photo2 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    background: url('./img/item/happyItem9.png');
+    background-size: cover;
   }
   .cart-right {
     padding-left: 50px;
@@ -383,8 +408,18 @@ header {
   .cart-right-box {
     width: 100%;
     height: 280px;
-    background-color: white;
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .right_box_img img{
+    width: 90%;
+  }
+  .right_box_text {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
   .cart-right-continue {
     background-color: #c9c7bb;
@@ -438,7 +473,7 @@ body::-webkit-scrollbar-track {
 
 /* 배너 동영상 */
 #mainBanner {
-  height: 48.8vw;
+  height: 49vw;
   overflow: hidden;
 }
 

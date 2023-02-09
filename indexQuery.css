@@ -197,6 +197,12 @@
     }
 }
 
+@media screen and (max-width: 670px) {
+    .right_box_img img{
+        width: 41.5761vw;
+  }
+}
+
 @media screen and (max-width: 630px) {
     .item_emo_happy, .item_emo_boring, .item_emo_sad, .item_emo_lonely, .item_emo_angry, .item_emo_nervous {
     width: 7.9365vw !important;
@@ -224,6 +230,7 @@
     #contentMood .mood_box:hover {
         transform: rotateY(0deg) scale(1) !important;
       }
+    }
 
 
 @media screen and (max-width: 520px) {
@@ -281,6 +288,20 @@
 
     .memo_text {
         font-size: 9.0000vw;
+    }
+    .right_box_text { 
+        text-align: center;
+        font-size: 3.5200vw;
+        line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+    .right_box_img img {
+        width: 11.433rem;
+    }
+    .right_box_text {
+        font-size: 0.946rem;
     }
 }
 
