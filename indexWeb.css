@@ -469,6 +469,7 @@ body::-webkit-scrollbar-track {
   background: #fbf9f7;
   color: #272727;
   font-family: "Pretendard-Regular";
+  padding-top: 100px;
 }
 
 /* 배너 동영상 */

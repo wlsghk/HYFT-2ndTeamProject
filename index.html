@@ -48,6 +48,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* 폰트 */
       @font-face {
@@ -65,8 +71,14 @@
         font-style: normal;
       }
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+      @font-face {
+        font-family: "JSArirang-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
       /* 아이콘 */
       @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     </style>
@@ -75,86 +87,86 @@
     <title>HYFT ˘◡˘</title>
   </head>
   <body>
-    <div id="container">
-      <!--헤더 시작 -->
-      <header>
-        <div class="header-up">
-          <p>첫 쇼핑 시 20% 할인 쿠폰 지급</p>
+    <header>
+      <div class="header-up">
+        <p>첫 쇼핑 시 20% 할인 쿠폰 지급</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="header-container">
+        <div class="header-left">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <p>How You Feel Today?</p>
+        <div class="header-right">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="login.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--헤더 시작 -->
+    <div class="bar-menu hidden">
+      <div class="bar-left">
+        <div class="bar-img"></div>
+      </div>
+      <div class="bar-right">
+        <a href="">Shop</a>
+        <a href="">Community</a>
+        <a href="">Magazine</a>
+        <a href="">Q & a</a>
+        <a href="">Login</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </div>
+    <div class="cart-menu hidden">
+      <div class="cart-left">
+        <div class="cart-left-title">YOU MAY LIKE</div>
+        <div class="cart-left-box">
+          <div class="cart-left-photo1"></div>
+          <p>소품 인테리어 큐브 캔들</p>
+          <p>24,000원</p>
+        </div>
+        <div class="cart-left-box">
+          <div class="cart-left-photo2"></div>
+          <p>감성 무드등</p>
+          <p>41,000원</p>
+        </div>
+      </div>
+      <div class="cart-right">
+        <div class="cart-right-title">
+          CART
           <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="header-container">
-          <div class="header-left">
-            <i class="fa-solid fa-bars"></i>
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="./img/item/happyItem10.png" alt="" />
           </div>
-          <p>How You Feel Today?</p>
-          <div class="header-right">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a href="login.html">
-              <i class="fa-solid fa-user"></i>
-            </a>
+          <div class="right_box_text">
+            <p>포근한 차렵이불</p>
+            <p>38,000원</p>
           </div>
         </div>
-      </header>
-      <div class="bar-menu hidden">
-        <div class="bar-left">
-          <div class="bar-img"></div>
-        </div>
-        <div class="bar-right">
-          <a href="">Shop</a>
-          <a href="">Community</a>
-          <a href="">Magazine</a>
-          <a href="">Q & a</a>
-          <a href="">Login</a>
-          <div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" />
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="./img/item/recommendItem9.png" alt="" />
           </div>
+          <div class="right_box_text">
+            <p>크리스마스 포스터</p>
+            <p>12,000원</p>
+          </div>
+        </div>
+        <div class="cart-right-continue">
+          <p><span>C</span>ONTINUE YOUR ORDER</p>
         </div>
       </div>
-      <div class="cart-menu hidden">
-        <div class="cart-left">
-          <div class="cart-left-title">YOU MAY LIKE</div>
-          <div class="cart-left-box">
-            <div class="cart-left-photo1"></div>
-            <p>소품 인테리어 큐브 캔들</p>
-            <p>24,000원</p>
-          </div>
-          <div class="cart-left-box">
-            <div class="cart-left-photo2"></div>
-            <p>감성 무드등</p>
-            <p>41,000원</p>
-          </div>
-        </div>
-        <div class="cart-right">
-          <div class="cart-right-title">
-            CART
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <div class="cart-right-box">
-            <div class="right_box_img">
-              <img src="./img/item/happyItem10.png" alt="" />
-            </div>
-            <div class="right_box_text">
-              <p>포근한 차렵이불</p>
-              <p>38,000원</p>
-            </div>
-          </div>
-          <div class="cart-right-box">
-            <div class="right_box_img">
-              <img src="./img/item/recommendItem9.png" alt="" />
-            </div>
-            <div class="right_box_text">
-              <p>크리스마스 포스터</p>
-              <p>12,000원</p>
-            </div>
-          </div>
-          <div class="cart-right-continue">
-            <p><span>C</span>ONTINUE YOUR ORDER</p>
-          </div>
-        </div>
-      </div>
-      <!-- 헤더 끝 -->
+    </div>
+    <!-- 헤더 끝 -->
 
+    <div id="container">
       <!-- 배너 동영상 -->
       <div id="mainBanner">
         <video
