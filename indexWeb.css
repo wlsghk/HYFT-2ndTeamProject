@@ -497,31 +497,44 @@ body::-webkit-scrollbar-track {
 .main-text1 {
   position: absolute;
   transform: translate(9.3750vw, -150px);
+  animation: slideInLeft 2s ease-in-out;
 }
 .main-text2 {
   position: absolute;
   transform: translate(45.8333vw, 160%);
   font-style: italic;
+  animation: slideInRight 2s ease-in-out;
 }
 .main-text2 span {
   font-family: 'HSBombaram';
   font-style: italic;
+
 }
 .main-text2 span:hover {
   color: #FEE3C4;
 }
 @keyframes slideInRight {
   from {
-    right:
-  } to {
-    right:
+    transform: translate(200%, 150%);
+  }
+  to {
+    transform: translate(45.8333vw, 160%);
   }
 }
-@keframes slideInLeft {
+@keyframes slideInRight2 {
   from {
-    left:
+    transform: translate(120%, 150%);
+  }
+
+  to {
+    transform: translate(4.3478vw, 153%);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    left: -50%;
   } to {
-    left:
+    left: 0px;
   }
 }
 .main-img {

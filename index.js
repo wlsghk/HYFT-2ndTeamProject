@@ -584,9 +584,19 @@ window.addEventListener("resize", (e) => {
 });
 
 /* 태블릿부터 고양이 이미지 크기 변경 */
-const catimg = document.querySelector(".main-img > img");
+const catimg = document.querySelector(".main-img img");
+const flowericon = document.querySelector(".main-icon img");
 window.addEventListener("resize", (e) => {
   if (innerWidth < 1150) {
     catimg.src = "/img/emotion/happyimg2Mob.png";
+  }
+});
+
+window.addEventListener("resize", (e) => {
+  if (innerWidth <= 430) {
+    catimg.src = "/img/emotion/happycatimgMob.jpg";
+    flowericon.src = "/icon/flower-icon-white.png";
+  } else {
+    flowericon.src = "/icon/flower-icon.png";
   }
 });
