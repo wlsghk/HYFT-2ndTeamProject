@@ -120,10 +120,10 @@
     .main-text1 {
         font-size: 7.8261vw;
         transform: translate(4.3478vw, 13.7391vw);
-        animation: slideInRight2 2s ease-in-out;
+        animation: slideInRight2 2.3s ease-in-out;
     }
     .main-text2 {
-        animation: slideInLeft 2s ease-in-out;
+        animation: slideInLeft 2.3s ease-in-out;
     }
     .main-img {
         transform: translate(59.8261vw, 5.0435vw)

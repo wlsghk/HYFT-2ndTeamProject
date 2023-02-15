@@ -497,13 +497,13 @@ body::-webkit-scrollbar-track {
 .main-text1 {
   position: absolute;
   transform: translate(9.3750vw, -150px);
-  animation: slideInLeft 2s ease-in-out;
+  animation: slideInLeft 2.5s ease-in-out;
 }
 .main-text2 {
   position: absolute;
   transform: translate(45.8333vw, 160%);
   font-style: italic;
-  animation: slideInRight 2s ease-in-out;
+  animation: slideInRight 2.3s ease-in-out;
 }
 .main-text2 span {
   font-family: 'HSBombaram';
