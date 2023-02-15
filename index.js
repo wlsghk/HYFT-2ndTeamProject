@@ -578,5 +578,15 @@ window.addEventListener("resize", (e) => {
         }
       }
     }
+  } else {
+    catimg.src = "/img/emotion/happyimg2.jpg";
+  }
+});
+
+/* 태블릿부터 고양이 이미지 크기 변경 */
+const catimg = document.querySelector(".main-img > img");
+window.addEventListener("resize", (e) => {
+  if (innerWidth < 1150) {
+    catimg.src = "/img/emotion/happyimg2Mob.png";
   }
 });
