@@ -167,22 +167,35 @@
     <!-- 헤더 끝 -->
 
     <div id="container">
-      <!-- 배너 동영상 -->
-      <div id="mainBanner">
-        <video
-          class="banner_video"
-          x-data="loopPlayer()"
-          muted
-          loop
-          autoplay
-          playsinline
-          disablepictureinpicture
-          disableremoteplayback
-          preload="none"
-          class="loopVideo"
-        >
-          <source src="./video/list1.mp4" />
-        </video>
+      <!-- 메인 -->
+      <div class="main">
+        <div class="main-text1">There's a</div>
+        <div class="main-img">
+          <img src="/img/emotion/happyimg2.jpg" alt="" />
+        </div>
+        <div class="main-icon">
+          <img src="/icon/flower-icon.png" alt="" />
+        </div>
+        <div class="main-video">
+          <video
+            class="main-video-banner"
+            x-data="loopPlayer()"
+            muted
+            loop
+            autoplay
+            playsinline
+            disablepictureinpicture
+            disableremoteplayback
+            preload="none"
+            class="loopVideo"
+          >
+            <source src="./video/list1.mp4" />
+          </video>
+        </div>
+        <div class="main-text2">best <span>choice.</span></div>
+        <div class="main-line">
+          <img src="/icon/main-line.png" alt="" />
+        </div>
       </div>
 
       <!-- 추천, 신상품, 베스트 아이템 나열 -->

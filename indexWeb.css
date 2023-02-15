@@ -10,6 +10,12 @@
   font-style: normal;
 }
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'HSBombaram';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -456,7 +462,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   height: 15%;
-  background: #ecccb3e0;
+  background: #ffeedb;
   border-radius: 10px;
 }
 
@@ -473,13 +479,81 @@ body::-webkit-scrollbar-track {
 }
 
 /* 배너 동영상 */
-#mainBanner {
-  height: 49vw;
-  overflow: hidden;
-}
-
-#mainBanner .banner_video {
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+.main-text1, .main-text2 {
+  position: absolute;
+  font-size: 6.7708vw;
+  font-family: 'HSBombaram';
+  color: #231F20; 
+}
+.main-text1 {
+  position: absolute;
+  transform: translate(9.3750vw, -150px);
+}
+.main-text2 {
+  position: absolute;
+  transform: translate(45.8333vw, 160%);
+  font-style: italic;
+}
+.main-text2 span {
+  font-family: 'HSBombaram';
+  font-style: italic;
+}
+.main-text2 span:hover {
+  color: #FEE3C4;
+}
+@keyframes slideInRight {
+  from {
+    right:
+  } to {
+    right:
+  }
+}
+@keframes slideInLeft {
+  from {
+    left:
+  } to {
+    left:
+  }
+}
+.main-img {
+  position: absolute;
+  transform: translate(46.3542vw, -20%);
+}
+.main-img img {
+  width: 26.0417vw;
+}
+.main-icon {
+  position: absolute;
+  transform: translate(72.9167vw, -50px)
+}
+.main-icon img {
+  width: 13.3333vw;
+}
+.main-video {
+  position: absolute;
+  width: 47%;
+  height: 50%;
+  overflow: hidden;
+  transform: translate(4.0625vw, 8.6667vw);
+}
+.main-video-banner {
+  width: 70%;
+}
+.main-line {
+  position: absolute;
+  transform: translate(64.0625vw, 16.6667vw);
+}
+.main-line img {
+  width: 28.1250vw;
 }
 
 /* 추천, 신상품, 베스트 아이템 나열 */
