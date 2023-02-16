@@ -588,15 +588,15 @@ const catimg = document.querySelector(".main-img img");
 const flowericon = document.querySelector(".main-icon img");
 window.addEventListener("resize", (e) => {
   if (innerWidth < 1150) {
-    catimg.src = "/img/emotion/happyimg2Mob.png";
+    catimg.src = "./img/emotion/happyimg2Mob.png";
   }
 });
 
 window.addEventListener("resize", (e) => {
   if (innerWidth <= 430) {
-    catimg.src = "/img/emotion/happycatimgMob.jpg";
-    flowericon.src = "/icon/flower-icon-white.png";
+    catimg.src = "./img/emotion/happycatimgMob.jpg";
+    flowericon.src = "./icon/flower-icon-white.png";
   } else {
-    flowericon.src = "/icon/flower-icon.png";
+    flowericon.src = "./icon/flower-icon.png";
   }
 });
