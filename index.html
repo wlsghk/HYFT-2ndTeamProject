@@ -54,6 +54,7 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="common.css" />
     <style>
       /* 폰트 */
       @font-face {
@@ -87,11 +88,8 @@
     <title>HYFT ˘◡˘</title>
   </head>
   <body>
+    <!-- 헤더시작 -->
     <header>
-      <div class="header-up">
-        <p>첫 쇼핑 시 20% 할인 쿠폰 지급</p>
-        <i class="fa-solid fa-xmark"></i>
-      </div>
       <div class="header-container">
         <div class="header-left">
           <i class="fa-solid fa-bars"></i>
@@ -99,23 +97,29 @@
         <p>How You Feel Today?</p>
         <div class="header-right">
           <i class="fa-solid fa-cart-shopping"></i>
-          <a href="login.html">
+          <a href="/login">
             <i class="fa-solid fa-user"></i>
           </a>
         </div>
       </div>
     </header>
-    <!--헤더 시작 -->
+    <div class="header-under">
+      <ul class="header-under-ul">
+        <li><a href="/product">shop</a></li>
+        <li><a href="/board">Community</a></li>
+        <li><a href="/magazine">magazine</a></li>
+      </ul>
+    </div>
     <div class="bar-menu hidden">
       <div class="bar-left">
         <div class="bar-img"></div>
       </div>
       <div class="bar-right">
-        <a href="">Shop</a>
-        <a href="">Community</a>
-        <a href="">Magazine</a>
-        <a href="">Q & a</a>
-        <a href="">Login</a>
+        <a href="/product">Shop</a>
+        <a href="/board">Community</a>
+        <a href="/magazine">Magazine</a>
+        <a href="#">Q & a</a>
+        <a href="/login">Login</a>
         <div>
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search" />
@@ -143,7 +147,7 @@
         </div>
         <div class="cart-right-box">
           <div class="right_box_img">
-            <img src="./img/item/happyItem10.png" alt="" />
+            <img src="img/item/happyItem10.png" alt="" />
           </div>
           <div class="right_box_text">
             <p>포근한 차렵이불</p>
@@ -152,16 +156,18 @@
         </div>
         <div class="cart-right-box">
           <div class="right_box_img">
-            <img src="./img/item/recommendItem9.png" alt="" />
+            <img src="img/item/recommendItem9.png" alt="" />
           </div>
           <div class="right_box_text">
             <p>크리스마스 포스터</p>
             <p>12,000원</p>
           </div>
         </div>
-        <div class="cart-right-continue">
-          <p><span>C</span>ONTINUE YOUR ORDER</p>
-        </div>
+        <a href="/myPage">
+          <div class="cart-right-continue">
+            <p><span>C</span>ONTINUE YOUR ORDER</p>
+          </div>
+        </a>
       </div>
     </div>
     <!-- 헤더 끝 -->
@@ -257,7 +263,7 @@
       <!-- 기업 소개 -->
       <div id="contentUs">
         <div
-          class="us_hyft amation"
+          class="us_hyft"
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="500"
@@ -275,7 +281,7 @@
           </div>
         </div>
         <div
-          class="us_goals amation"
+          class="us_goals"
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="1000"
@@ -291,7 +297,7 @@
           </div>
         </div>
         <div
-          class="us_package amation"
+          class="us_package"
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="1500"
@@ -432,6 +438,7 @@
 
   <!-- js 연결 -->
   <script src="./index.js"></script>
+  <script src="/common.js"></script>
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- AOS -->
